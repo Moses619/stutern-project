@@ -4,6 +4,8 @@ import Heading from "./components/heading";
 import Form from "./components/form";
 import Forecast from "./components/forecast";
 
+
+
 const apiKey = "9218e3e59d4744fa2be7916b15f7d660";
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -13,6 +15,9 @@ const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 
 const timeEl = document.getElementById('time');
 const dateEl = document.getElementById('date');
+
+
+
 
 setInterval(() => {
     const time = new Date();
@@ -40,6 +45,8 @@ class App extends Component {
     icon: "",
     description: ""
   };
+
+  
 
   getWeather = async (e) => {
     e.preventDefault();
